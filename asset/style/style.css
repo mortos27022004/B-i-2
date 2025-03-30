@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+    --main-color:#103178;
+    --second-color:#FFC802;
+    --green:#13A05D;
+}
+body{
+    font-family: "Inria Serif", serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.d-1{
+    font-size: 61px;
+    line-height: 67px;
+    font-weight: 700;
+}
+.d-2{
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+}
+.d-3{
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+}
+.d-4{
+    font-size: 22px;
+    line-height: 34px;
+}
+.d-5{
+    font-size: 18px;
+    line-height: 26px;
+}
+.d-4-bold{
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 700;
+}
+.white-color{
+    color: white;
+}
+.button{
+    display: block;
+    padding: 0.5rem 2rem;
+    background-color: gray;
+    border: 1px gray;
+    color: white;
+    border-radius: 100px;
+    width: fit-content;
+}
+.button-hilight{
+    background-color: var(--main-color);
+    border: solid var(--main-color) 1px;
+}
+.button-hilight:hover{
+    background-color: white;
+    color: var(--main-color);
+    transition: all 0.5s;
+}
+.section-2{
+    padding: 60px 0;
+}
+.section-2 .inner-tag{
+    display: block;
+    padding: 0;
+    color: white;
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    border-radius: 100px;
+    background-color: var(--green);
+}
+.section-2 .inner-discount{
+    color: var(--second-color);
+}
+.section-2 .new-price{
+    color: var(--second-color);
+}
+.section-2 .old-price{
+    color: gray;
+    text-decoration: line-through;
+}
+.section-2 .inner-item{
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+}
+.section-2 .inner-content{
+  position: relative;
+  z-index: 2;
+  height: 100%;
+
+}
+.section-2 .img-wrap{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.section-2 img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.section-2 .inner-item:hover img{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
