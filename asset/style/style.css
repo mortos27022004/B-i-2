@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 :root{
     --main-color:#103178;
@@ -8,7 +9,7 @@
     --light-gray:#F0F2F5;
 }
 body{
-    font-family: "Inria Serif", serif;
+    font-family: "Merriweather", serif;
     box-sizing: border-box;
     color: var(--main-color);
 }
@@ -18,26 +19,31 @@ a{
 img{
     width: 100%;
 }
-.d-1{
+h1{
     font-size: 61px;
     line-height: 67px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .d-2{
     font-size: 48px;
-    line-height: 53px;
-    font-weight: 700;
+    line-height: 70px;
+    font-weight: 600;
     
 }
 .d-3{
     font-size: 32px;
     line-height: 42px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .d-4{
     font-size: 22px;
     line-height: 34px;
     
+}
+p{
+    font-size: 22px;
+    line-height: 34px;
+    color: var(--sub-color);
 }
 .d-5{
     font-size: 18px;
@@ -46,7 +52,7 @@ img{
 .d-4-bold{
     font-size: 22px;
     line-height: 34px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .white-color{
     color: white;
@@ -84,7 +90,7 @@ img{
 }
 
 .section-1{
-    padding: 60px 0px;
+    padding: 50px 0px;
     background-color: var(--light-gray);
 }
 .section-1 h1{
@@ -99,13 +105,14 @@ img{
 .section-1 span{
     margin-left: 0.5rem;
 }
+
 .section-1  .icon-wrap{
     display: flex;
     margin-bottom: 2rem;
     color: var(--sub-color);
 }
 .section-1 .icon{
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 .section-1 .price-wrap{
     position: absolute;
@@ -126,6 +133,9 @@ img{
 .section-1 .img-wrap{
     position: relative;
 }
+
+    
+
 .section-2{
     padding: 60px 0;
 }
@@ -140,12 +150,15 @@ img{
 }
 .section-2 .inner-discount{
     color: var(--second-color);
+    margin: 0.5rem 0;
 }
 .section-2 .new-price{
     color: var(--second-color);
+    margin: 0.5rem 0;
 }
 .section-2 .old-price{
     color: gray;
+    margin: 0.5rem 0;
     text-decoration: line-through;
 }
 .section-2 .inner-item{
@@ -177,4 +190,24 @@ img{
 .section-2 .inner-item:hover img{
     transform: scale(1.1);
     transition: all 0.4s ease-in-out;
+}
+.section-3{
+    padding: 60px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+.section-3 .heading{
+    text-align: center;
+    padding: 50px 0;
+}
+.section-3 .heading p{
+    padding: 0 20%;
+}
+.section-3 .inner-item i{
+    font-size: 60px;
+    padding: 2.5rem;
+    color: var(--sub-color);
+}
+.section-3 .inner-item p{
+    padding: 0 10%;
 }
